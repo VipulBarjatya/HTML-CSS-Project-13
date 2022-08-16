@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    height: 100vh;
+    height: 100vw;
 }
 
 a {
@@ -26,7 +26,6 @@ a {
 }
 
 .header {
-    height: 100vh;
     background-color: #7030cc;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -85,7 +84,6 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    height: 100vh;
     margin-bottom: 2rem;
 }
 
@@ -207,4 +205,127 @@ a {
 .card-main {
     font-size: 24px;
     margin-bottom: 1rem;
+}
+
+@media(max-width:968px) {
+
+    .navbar {
+
+        flex-direction: column;
+        gap: 2rem;
+        padding: 4rem 1rem 0rem 1rem;
+    }
+
+    .nav-items a {
+        color: #fff;
+        margin-left: 2rem;
+        font-size: 14px;
+
+    }
+
+    .btn {
+        padding: .5rem .75rem;
+        font-size: 14px;
+    }
+
+
+    .hero-section {
+        margin: 0 2rem;
+    }
+
+    .hero-text {
+        padding: 0;
+    }
+
+    .hero-heading {
+        font-size: 36px;
+        margin-bottom: 2rem;
+        line-height: 1;
+    }
+
+    .hero-desc {
+        font-size: 16px;
+        margin-bottom: 2rem;
+        font-weight: 300;
+    }
+
+    .feature {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-text .content {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .feature-img {
+        width: 75vw;
+        margin: 0 auto;
+    }
+
+    .feature-main {
+        font-size: 24px;
+        margin-bottom: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    .feature-text {
+        margin-left: 0rem;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0;
+        margin: 0 8rem;
+    }
+}
+
+@media(max-width:512px) {
+    .nav-btn {
+        display: none !important;
+    }
+
+    .nav-items a {
+        display: inline-block;
+        margin-bottom: 2rem;
+
+    }
+
+    .hero-section {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-img {
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        width: 80%;
+    }
+
+    .feature-list {
+        padding: 0 2rem;
+    }
+
+
+    .feature-heading {
+        font-size: 24px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+
+    .feature-main {
+        font-size: 16px;
+        margin-bottom: 1.5rem;
+    }
+
+    .feature-text {
+        font-size: 14px;
+        margin-right: 2rem;
+    }
 }
